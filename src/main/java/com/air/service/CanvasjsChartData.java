@@ -27,8 +27,8 @@ public class CanvasjsChartData {
 
    private static Map<String, String> namePerInstallationId = new HashMap<String, String>() {
       {
-         put(SIERCZA_INSTALLATION_ID, "Siercza");
-         put(KURASIA_INSTALLATION_ID, "Hoffmanowej");
+         put(SIERCZA_INSTALLATION_ID, "Addr1");
+         put(KURASIA_INSTALLATION_ID, "Addr2");
       }
    };
 
@@ -52,7 +52,7 @@ public class CanvasjsChartData {
       map.put("x", System.currentTimeMillis() + "L");
 
       HttpHeaders headers = new HttpHeaders();
-      headers.set("apikey", "oPv3bEqqrZve5DWEPlG9TmJkewxmssVK");
+      headers.set("apikey", API_KEY);
 
       HttpEntity entity = new HttpEntity(headers);
       RestTemplate restTemplate = new RestTemplate();
